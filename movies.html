@@ -5,21 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies App!</title>
+    <link rel="stylesheet" href="movies.css">
 </head>
 <body>
-    <form action="#">
-        <label for="title">Title
-            <input type="text" id="title" required>
+    <h1>Favorite Movies!</h1>
+    <form action="#" id="movie-form">
+        <label for="title">Title: 
+            <input type="text" id="title" placeholder="Enter movie title" required>
         </label>
-        <label for="rating">Rating
+        <label for="rating">Rating: 
             <input type="number" id="rating" min="0" max="10" required>
         </label>
-        <button type="submit">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
     </form>
 
-    <ul>
-        
-    </ul>
+    <br>
+
+    <table id="movie-list">
+        <thead id="movie-head">
+            <th>Movie</th>
+            <th>Rating</th>
+            <th>Delete</th>
+        </thead>
+        <tbody>
+            <!-- <tr>
+                <td>Juno</td>
+                <td>10</td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr>
+                <td>John Wick 3</td>
+                <td>7</td>
+                <td><button>Delete</button></td>
+            </tr> -->
+        </tbody>
+    </table>
+    
+    <!-- <table id="movie-list">
+        <thead>
+            <th>Movie</th>
+            <th>Rating</th>
+            <th>Delete</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juno</td>
+                <td>10</td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr>
+                <td>John Wick 3</td>
+                <td>7</td>
+                <td><button>Delete</button></td>
+            </tr>
+        </tbody>
+    </table> -->
+
 
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
