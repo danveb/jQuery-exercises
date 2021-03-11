@@ -4,4 +4,8 @@
     border-radius: 5px;
 }
 
-
+.btn-del {
+    background-color: crimson; 
+    color: white; 
+    border-radius: 5px; 
+}
